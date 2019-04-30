@@ -6,7 +6,7 @@ This Python SDK allows python developer experiment NuCypher network to securely 
 
 install with pip:
 ```
-pip install nucypher-ipfs
+pip install nucypher-ipfs nucypher ipfsapi
 ```
 
 ## Usage

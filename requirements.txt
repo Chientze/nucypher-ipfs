@@ -1,3 +1,1 @@
-ipfsapi
-nucypher
-maya
+ipfsapi>=0.2.3

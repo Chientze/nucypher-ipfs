@@ -10,7 +10,8 @@ pip install nucypher-ipfs
 ```
 If runs into connect module issue, it may cause of duplicate dependencies, fix by
 ```
-pip uninstall ipfs-api
+pip uninstall ipfs-api ipfsapi
+pip install ipfsapi
 ```
 
 ## Usage

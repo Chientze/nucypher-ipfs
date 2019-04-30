@@ -1,8 +1,0 @@
-README.md
-setup.py
-nucypher_ipfs/__init__.py
-nucypher_ipfs/client.py
-nucypher_ipfs.egg-info/PKG-INFO
-nucypher_ipfs.egg-info/SOURCES.txt
-nucypher_ipfs.egg-info/dependency_links.txt
-nucypher_ipfs.egg-info/top_level.txt

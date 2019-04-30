@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="nucypher-ipfs",
-    version="0.0.2",
+    version="0.0.4",
     author="Pisuth D.",
     author_email="pisuth.dae@gmail.com",
     description="Python SDK allows python developers to securely upload and download a file to IPFS, end-to-end encrypting data with keys from NuCypher network",
@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/pisuthd/nucypher-ipfs",
     packages=setuptools.find_packages(),
     install_requires=[
-          'ipfs-api',
+          'ipfsapi',
           'nucypher'
       ],
     classifiers=[

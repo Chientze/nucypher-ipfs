@@ -37,7 +37,7 @@ Specify the file to be uploaded to IPFS network, the hash of our encrypted file 
 ```
 >>> filename = "test.txt"
 
->>>receipt = client.uploadFile(filename=filename , policy_pubkey=policy_pubkey)
+>>> receipt = client.uploadFile(filename=filename , policy_pubkey=policy_pubkey)
 {'data_source_public_key': ..., 'hash_key': 'Qmd9RNRiyT6SUMPpxWJoRmZMVGEEMcBaPRKY6EdUGTvaLk'}
 ```
 

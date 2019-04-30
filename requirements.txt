@@ -1,2 +1,2 @@
-ipfsapi>=0.2.3
+ipfsapi>=0.4.3
 nucypher>=0.1.0a22

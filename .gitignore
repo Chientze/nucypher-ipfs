@@ -1,1 +1,4 @@
 test/
+build/
+dist/
+nucypher_ipfs.egg_info

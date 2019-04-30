@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Pisuth D.",
     author_email="pisuth.dae@gmail.com",
-    description="Python SDK allows python developers to securely upload and download a file to IPFS, end-to-end encrypting data with keys from NuCypher network"
+    description="Python SDK allows python developers to securely upload and download a file to IPFS, end-to-end encrypting data with keys from NuCypher network",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/pisuthd/nucypher-ipfs",

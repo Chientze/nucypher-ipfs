@@ -1,1 +1,2 @@
 ipfsapi>=0.2.3
+nucypher>=0.1.0a22

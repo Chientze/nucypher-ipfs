@@ -10,6 +10,8 @@ from nucypher.crypto.kits import UmbralMessageKit
 
 from umbral.keys import UmbralPrivateKey, UmbralPublicKey
 
+from faker import Faker
+
 from nucypher.characters.lawful import Alice,Bob, Ursula
 from nucypher.config.characters import AliceConfiguration
 from nucypher.crypto.powers import DecryptingPower, SigningPower
@@ -19,6 +21,7 @@ from nucypher.keystore.keypairs import DecryptingKeypair, SigningKeypair
 
 from nucypher.characters.lawful import Enrico
 
+fake = Faker()
 
 def connect_ursula(ursula_url = "https://localhost:9151"):
     client = Client(ursula_url)

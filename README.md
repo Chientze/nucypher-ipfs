@@ -14,9 +14,9 @@ pip install nucypher-ipfs
 To use this, you must first import it and specify host name and port of a runnning instance of Ursula:
 
 ```
->>>import nucypher_ipfs
+>>> import nucypher_ipfs
 
->>>client = nucypher_ipfs.connect_ursula("https://localhost:9151")
+>>> client = nucypher_ipfs.connect_ursula("https://localhost:9151")
 ```
 
 This current version connects to public IPFS gateway of Infura through API thus no need to setup additional IPFS host.
@@ -24,18 +24,18 @@ This current version connects to public IPFS gateway of Infura through API thus 
 Now that you have a client instance, you can make requests and process responses from the service. To begin we apparently need to get a public key of our recipient or we can generate a new one from following:
 
 ```
->>>recipient_privkeys, recipient_pubkeys = client.generate_recipient_keys()
+>>> recipient_privkeys, recipient_pubkeys = client.generate_recipient_keys()
 ```
 
 Policy public keys will be required for the data owner to encrypt the data that belongs to the policy:
 ```
->>>policy_pubkey = client.generate_owner_policy_public_key(max_days=5)
+>>> policy_pubkey = client.generate_owner_policy_public_key(max_days=5)
 ```
 
 Specify the file to be uploaded to IPFS network, the hash of our encrypted file will be returned when it finish. 
 
 ```
->>>filename = "test.txt"
+>>> filename = "test.txt"
 
 >>>receipt = client.uploadFile(filename=filename , policy_pubkey=policy_pubkey)
 {'data_source_public_key': ..., 'hash_key': 'Qmd9RNRiyT6SUMPpxWJoRmZMVGEEMcBaPRKY6EdUGTvaLk'}
@@ -50,16 +50,16 @@ https://gateway.ipfs.io/ipfs/<your hash here>
 A recipient can be deligated by provide their public key:
 
 ```
->>>policy_info = client.authorize(recipient_pubkeys=recipient_pubkeys, max_days=5)
+>>> policy_info = client.authorize(recipient_pubkeys=recipient_pubkeys, max_days=5)
 ```
 
 Once eveything is ready, the recipient can now able to decrypt the file and download to the local machine:
 
 ```
->>>client.downloadFile(downloadFilename="downloadFile.txt",
-    recipient_privkeys=recipient_privkeys, 
-    receipt=receipt, 
-    policy_info=policy_info)
+>>> client.downloadFile(downloadFilename="downloadFile.txt",
+        recipient_privkeys=recipient_privkeys, 
+        receipt=receipt, 
+        policy_info=policy_info)
 ```
 
 ## Documentation
